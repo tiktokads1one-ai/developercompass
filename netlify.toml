@@ -1,0 +1,4 @@
+[build]
+  base    = "dev-compass"
+  command = "npm install && npm run build"
+  publish = "dist"
