@@ -1,0 +1,153 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description"
+    },
+    "full_description": {
+      "type": "string",
+      "description": "Detailed description"
+    },
+    "github_url": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "npm_package": {
+      "type": "string"
+    },
+    "stars": {
+      "type": "number"
+    },
+    "forks": {
+      "type": "number"
+    },
+    "open_issues": {
+      "type": "number"
+    },
+    "language": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "bundle_size_kb": {
+      "type": "number"
+    },
+    "typescript_support": {
+      "type": "boolean"
+    },
+    "beginner_friendly": {
+      "type": "boolean"
+    },
+    "self_hostable": {
+      "type": "boolean"
+    },
+    "privacy_focused": {
+      "type": "boolean"
+    },
+    "actively_maintained": {
+      "type": "boolean"
+    },
+    "last_commit_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "docs_quality": {
+      "type": "string",
+      "enum": [
+        "excellent",
+        "good",
+        "average",
+        "poor"
+      ]
+    },
+    "learning_curve": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "moderate",
+        "steep"
+      ]
+    },
+    "deployment_difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "moderate",
+        "hard"
+      ]
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_projects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Names of commonly used together projects"
+    },
+    "pros": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "community_sentiment": {
+      "type": "string",
+      "enum": [
+        "very_positive",
+        "positive",
+        "mixed",
+        "negative"
+      ]
+    },
+    "star_growth_trend": {
+      "type": "string",
+      "enum": [
+        "rising",
+        "stable",
+        "declining"
+      ]
+    },
+    "weekly_downloads": {
+      "type": "number"
+    },
+    "contributors": {
+      "type": "number"
+    },
+    "avg_issue_response_hours": {
+      "type": "number"
+    },
+    "logo_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "description"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "SearchQuery",
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string",
+      "description": "The natural language search query"
+    },
+    "parsed_intent": {
+      "type": "string"
+    },
+    "parsed_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "result_count": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "query"
+  ]
+}

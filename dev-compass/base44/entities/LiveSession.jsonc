@@ -1,0 +1,33 @@
+{
+  "name": "LiveSession",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "page": {
+      "type": "string"
+    },
+    "page_label": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "is_returning": {
+      "type": "boolean"
+    },
+    "active_search": {
+      "type": "string"
+    },
+    "last_heartbeat": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "session_id",
+    "page",
+    "last_heartbeat"
+  ]
+}
